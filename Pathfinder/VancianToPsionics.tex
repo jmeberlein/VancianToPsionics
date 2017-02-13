@@ -1,0 +1,32 @@
+\documentclass[a4paper,10pt]{article}
+
+\input{header.tex}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\thispagestyle{empty}
+\includegraphics[width=\textwidth]{TripleSpiral.png}
+\vfill
+\begin{flushright} \large
+\emph{Version:} \\
+Beta 1.12b \href{https://github.com/jmeberlein/VancianToPsionics/releases}{(See all versions)}\\
+\end{flushright}
+\end{titlepage}
+\section{Table of Contents}
+\setlength{\columnsep}{0.5in}
+\begin{multicols}{3} 
+\scriptsize
+\tableofcontents
+\listoftables
+\listoffigures
+\normalsize
+\end{multicols}
+\newpage
+\begin{multicols}{2}
+
+\subfile{Sections/01_spellcasting_system.tex}
+
+\end{multicols}
+\end{document}

@@ -1,0 +1,94 @@
+%% Encoding declaration %%
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+%% Page style and appearance %%
+\usepackage[top=0.9in, bottom=1in, left=0.9in, right=0.9in]{geometry} %Margin setup
+\usepackage{multicol} %Main multicolumn handling
+\usepackage{titlesec} %For manipulating rubber lengths in headings
+\usepackage{multirow} %Row spanning in tables
+\usepackage{enumitem} % List environments
+\usepackage{times} %Times font
+\usepackage{booktabs}
+
+%% Additional symbols %%
+\usepackage{amsmath} %For those few mathematical formulas
+\usepackage{textcomp} %For those few degree and other odd symbols
+
+%% Additional functionality %%
+\usepackage{tikz} %sreservoir's AMF picture
+\usepackage[pdftex,bookmarks=true,colorlinks=true,linkcolor=blue,pdftitle={From Vancian to Psionic}]{hyperref}
+\usepackage[all]{hypcap}
+
+\usepackage{subfiles}
+\graphicspath{{../Pics/}{../../Pics/}}
+
+%% Macros
+
+\setlength{\parskip}{1ex plus 0.2ex minus 0.2ex}
+\titlespacing*{\subsubsection}{0pt}{3.25ex plus 0.2ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\paragraph} {0pt}{1ex plus 0.2ex minus 0.2ex}{1em}
+\titlespacing*{\subparagraph} {\parindent}{1ex plus 0.2ex minus 0.2ex}{1em}
+
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{1}
+\setcounter{totalnumber}{2}
+\setcounter{dbltopnumber}{2}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\dbltopfraction}{0.85}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\floatpagefraction}{0.7}
+\renewcommand{\dblfloatpagefraction}{0.7}
+
+% Generic spell block statistic lines
+
+\newcommand{\Level}[1]{\\ \textbf{Level:} #1}
+\newcommand{\Components}[1]{\\ \textbf{Components:} #1}
+\newcommand{\CastingTime}[1]{\\ \textbf{Casting Time:} #1}
+\newcommand{\Range}[1]{\\ \textbf{Range:} #1}
+\newcommand{\Target}[1]{\\ \textbf{Target:} #1}
+\newcommand{\Area}[1]{\\ \textbf{Area:} #1}
+\newcommand{\Duration}[1]{\\ \textbf{Duration:} #1}
+\newcommand{\SavingThrow}[1]{\\ \textbf{Saving Throw:} #1}
+\newcommand{\SR}[1]{\\ \textbf{Spell Resistance:} #1}
+\newcommand{\SRno}{\\ \textbf{Spell Resistance:} No}
+\newcommand{\SRyes}{\\ \textbf{Spell Resistance:} Yes}
+\newcommand{\SP}[1]{\\ \textbf{Spell Points:} #1}
+
+% Spell ranges
+
+\newcommand{\PersonalRange}{Personal}
+\newcommand{\TouchRange}{Touch}
+\newcommand{\CloseRange}{Close (25 ft. + 5 ft./2 levels)}
+\newcommand{\MediumRange}{Medium (100 ft. + 10 ft./level)}
+\newcommand{\LongRange}{Long (400 ft. + 40 ft./level)}
+\newcommand{\UnlimitedRange}{Unlimited}
+
+% Spell durations
+
+\newcommand{\InstantaneousDuration}{Instantaneus}
+\newcommand{\OneMinLevelDuration}[1][]{1 min./level #1}
+\newcommand{\TenMinLevelDuration}[1][]{10 min./level #1}
+\newcommand{\OneHourLevelDuration}[1][]{1 hour/level #1}
+\newcommand{\PermanentDuration}{Permanent}
+\newcommand{\DismissibleSpell}{(D)}
+
+% One-column environment definitons for multicol - not floating!
+
+\makeatletter
+\newenvironment{tableonecolumn}{\begin{minipage}{6.4cm}\begin{center}\def\@captype{table}}{\end{center}\end{minipage}}
+
+\newenvironment{figureonecolumn}{\begin{minipage}{6.4cm}\begin{center}\def\@captype{figure}}{\end{center}\end{minipage}}
+\makeatother
+
+\setlist[itemize]{leftmargin=1em}
+\setlist[enumerate]{leftmargin=1em}
+\setcounter{secnumdepth}{-1} 
+\hyphenpenalty=5000
+\interfootnotelinepenalty=10000
+\frenchspacing
+\title{From Vancian to Psionic}
+\date{}
+\author{}
+
